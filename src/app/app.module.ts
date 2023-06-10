@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImprintComponent
+    ImprintComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
