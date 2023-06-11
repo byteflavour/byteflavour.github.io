@@ -4,8 +4,9 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
-  {path: 'imprint', component: ImprintComponent},
-  {path: 'privacy', component: PrivacyComponent}
+  { path: 'imprint', component: ImprintComponent },
+  { path: 'privacy', component: PrivacyComponent },
+  { path: '', redirectTo: '/imprint', pathMatch: 'full' },
 ];
 
 @NgModule({
