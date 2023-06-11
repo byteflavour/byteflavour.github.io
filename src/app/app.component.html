@@ -1,6 +1,23 @@
+<mat-toolbar>
 
-<nav>
-    <a routerLink="/imprint">Impressum</a>
-    <a routerLink="/privacy">Datenschautz</a>
-  </nav>
+  <span>{{title}}</span>
+  
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <nav>
+      <button mat-menu-item routerLink="/imprint">
+        Impressum
+      </button>
+      <button mat-menu-item routerLink="/privacy">
+        Datenschutz
+      </button>
+    </nav>
+  </mat-menu>
+
+</mat-toolbar>
+
 <router-outlet></router-outlet>
