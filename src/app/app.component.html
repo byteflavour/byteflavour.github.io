@@ -1,14 +1,24 @@
 <mat-toolbar>
 
+  <button mat-icon-button routerLink="/">
+    <mat-icon fontIcon="house"></mat-icon>
+  </button>
   <span>{{title}}</span>
-  
+
   <span class="spacer"></span>
-  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-    <mat-icon>more_vert</mat-icon>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with a menu">
+    <mat-icon fontIcon="more_vert"></mat-icon>
   </button>
 
   <mat-menu #menu="matMenu">
     <nav>
+
+
+      <button mat-menu-item routerLink="/">
+        <mat-icon fontIcon="house">Start</mat-icon>
+        <span>Start</span>
+      </button>
+
       <button mat-menu-item routerLink="/imprint">
         Impressum
       </button>
